@@ -9,10 +9,13 @@ class Request
     public function getPath(){
         $path = $_SERVER['REQUEST_URI'] ?? '/';
         $position = strpos($path, '?');
-        var_dump($position);
+        if(!$position){
+            return $path; // if it's not found in URL #(?id=5)
+        }
+        return substr($path, 0, $position);
     }
 
     public function getMethod(){
-
+        return strtolower($_SERVER['REQUEST_METHOD']);
     }
 }
