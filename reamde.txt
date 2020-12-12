@@ -1,0 +1,4 @@
+@composer
+ ~comands
+  - composer init (Для инициализации проекта и поялвление файла composer.json)
+  - composer update (Обновление composer.json) 

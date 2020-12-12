@@ -1,0 +1,15 @@
+{
+    "name": "suleiman/sulvas",
+    "authors": [
+        {
+            "name": "condemnJS",
+            "email": "gizat.sultan@mail.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
